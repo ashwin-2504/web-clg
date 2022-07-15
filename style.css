@@ -146,10 +146,21 @@
   text-align: center;
 }
 
-.card::before
-{
+.card::before {
   content: "";
-  border: 2px solid blue;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 14px;
+}
+
+.card::after {
+  content: "";
+  display: flex;
+  text-align: center;
+  background-color: inset rgba(0, 0, 0, 0.5);
 }
 
 #card1,
@@ -160,14 +171,23 @@
   background-position: -10px;
 }
 
+#text {
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 #card1 {
   background-image: url(../assets/comp.jpg);
 }
 
 #card2 {
-  background-image: url(../assets/bio.jpg);
+  background-image: url(../assets/phy.jpg);
 }
 
 #card3 {
   background-image: url(../assets/chem.jpg);
+}
+
+.card p {
+  position: static;
 }
