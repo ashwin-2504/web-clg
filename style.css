@@ -177,15 +177,15 @@
 }
 
 #card1 {
-  background-image: url(./assets/comp.jpg);
+  background-image: url(./comp.jpg);
 }
 
 #card2 {
-  background-image: url(./assets/phy.jpg);
+  background-image: url(./phy.jpg);
 }
 
 #card3 {
-  background-image: url(./assets/chem.jpg);
+  background-image: url(./chem.jpg);
 }
 
 .card p {
