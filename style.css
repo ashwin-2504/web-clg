@@ -10,7 +10,7 @@
 }
 
 .main {
-  background-image: url(./assets/bg.jpeg);
+  background-image: url(./bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
