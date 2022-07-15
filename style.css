@@ -10,7 +10,7 @@
 }
 
 .main {
-  background-image: url(../assets/bg.jpeg);
+  background-image: url(./assets/bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -177,15 +177,15 @@
 }
 
 #card1 {
-  background-image: url(../assets/comp.jpg);
+  background-image: url(./assets/comp.jpg);
 }
 
 #card2 {
-  background-image: url(../assets/phy.jpg);
+  background-image: url(./assets/phy.jpg);
 }
 
 #card3 {
-  background-image: url(../assets/chem.jpg);
+  background-image: url(./assets/chem.jpg);
 }
 
 .card p {
