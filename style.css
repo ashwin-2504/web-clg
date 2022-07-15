@@ -10,7 +10,7 @@
 }
 
 .main {
-  background-image: url(https://images.unsplash.com/photo-1432839318976-b5c5785ce43f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-image: url(../assets/bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -33,7 +33,7 @@
 
 .sub-main2 {
   height: 95%;
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/
   margin: 1rem;
   overflow: scroll;
   scrollbar-width: none;
@@ -100,8 +100,7 @@
   text-align: center;
 }
 
-.s1,
-.s2 {
+.s1 {
   margin-top: 5rem;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
@@ -119,7 +118,6 @@
   -webkit-box-shadow: 0px 17px 17px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 17px 17px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 15px 20px 1px rgba(0, 0, 0, 0.75);
-  transition: 100ms linear;
 }
 
 .s1 img:hover {
@@ -137,9 +135,18 @@
 .s2 {
   border: 1px solid white;
   display: flex;
-  padding: 2rem;
+  margin-top: 3rem;
 }
 
-.s2 .card {
-  border: 1px solid;
+.card {
+  border-radius: 14px;
+  margin: 6rem 1rem 1rem 1rem;
+  border: 1px solid white;
+}
+
+.card img {
+  position: relative;
+  bottom: 5rem;
+  height: 100px;
+  border: 1px solid red;
 }
