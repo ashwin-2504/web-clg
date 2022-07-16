@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Finlandica:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
@@ -15,7 +10,7 @@
 }
 
 .main {
-  background-image: url(../assets/bg.jpeg);
+  background-image: url(./bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -104,58 +99,95 @@
   padding: 1rem 1rem 1rem 1rem;
   text-align: center;
 }
-.bio {
+
+.s1 {
+  margin-top: 5rem;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.s1 img {
+  position: relative;
+  bottom: 5rem;
+  width: 30rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+  -webkit-box-shadow: 0px 17px 17px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 17px 17px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 15px 20px 1px rgba(0, 0, 0, 0.75);
+}
+
+.s1 img:hover {
+  width: 32rem;
+}
+
+.s1 p {
+  padding: 0 10rem 4rem 10rem;
+  font-size: 26px;
+  color: white;
+  font-weight: 900;
+  font-family: "Open Sans", sans-serif;
+}
+
+.s2 {
+  border: 1px solid white;
+  display: flex;
+  margin-top: 3rem;
+}
+
+.card {
+  border-radius: 14px;
+  margin: 1rem;
+  border: 1px solid white;
+  height: 30rem;
   text-align: center;
-  margin-top: 50px;
-  display: inline-flex;
 }
 
-.ashwin,
-.yash {
-  height: max-content;
-  width: 595px;
-
-  margin-left: 20px;
-  margin-right: 20px;
+.card::before {
+  content: "";
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 14px;
 }
 
-.ashwin img,
-.yash img {
-  border: 2px solid;
-  padding: 4px;
-  border-radius: 50%;
-  height: 150px;
+.card::after {
+  content: "";
+  display: flex;
+  text-align: center;
+  background-color: inset rgba(0, 0, 0, 0.5);
 }
 
-.titles {
-  margin-top: 15px;
-  color: grey;
-  font-size: 19px;
-  font-family: "Poppins", sans-serif;
+#card1,
+#card2,
+#card3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -10px;
 }
 
-.data {
-  padding-bottom: 10px;
-  font-size: 28px;
-  font-family: "Kanit", sans-serif;
+#text {
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  height: 40px;
-  background-color: rgb(201, 201, 201);
+#card1 {
+  background-image: url(./comp.jpg);
 }
 
-.footer a {
-  color: cornflowerblue;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-decoration: none;
-  font-size: 24px;
-  font-family: "Anek Malayalam", sans-serif;
+#card2 {
+  background-image: url(./phy.jpg);
+}
+
+#card3 {
+  background-image: url(./chem.jpg);
+}
+
+.card p {
+  position: static;
 }
